@@ -4,13 +4,42 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="scroll">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Avatallar
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Búsqueda Avanzada</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     <div class="container">
         <form class="row g-3 mt-3">
+            <div id="tituloindex"><h1>Registro de usuario</h1></div>
             <div class="col-6">
                 <label for="inputName" class="form-label">Nombre(s)</label>
                 <input type="text" class="form-control" id="inputName" placeholder="Escribe tu(s) nombre(s)">
@@ -32,12 +61,12 @@
                 <input type="text" class="form-control" id="inputUser" placeholder="Escribe tu nombre de usuario">
             </div>
             <div class="col-6">
-                <label for="inputPass" class="form-label">Contrasena</label>
-                <input type="password" class="form-control" id="inputPass" placeholder="Escribe tu contrasena">
+                <label for="inputPass" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPass" placeholder="Escribe tu contraseña">
             </div>
             <div class="col-6">
-                <label for="inputPass2" class="form-label">Confirmar Contrasena</label>
-                <input type="password2" class="form-control" id="inputPass2" placeholder="Confirma tu contrasena">
+                <label for="inputPass2" class="form-label">Confirmar Contraseña</label>
+                <input type="password2" class="form-control" id="inputPass2" placeholder="Confirma tu contraseña">
             </div>
             <div class="col-6">
                 <label for="inputImg" class="form-label">Foto de Perfil</label>
@@ -51,4 +80,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="./css/bootstrap.min.js"></script>
   </body>
+  <footer class="mt-auto" id="footer">
+    <h6>Autores</h6>
+    <h6>Juan Gerardo Alanís Delgado</h6>
+    <h6>Daniel</h6>
+  </footer>
 </html>
