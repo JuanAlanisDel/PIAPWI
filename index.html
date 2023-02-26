@@ -5,22 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
   </head>
   <body>
     <div class="container">
-        <form class="row">
+        <form class="row g-3 mt-3">
             <div class="col-6">
-                <label for="emailInput" class="form-label">Correo electronico:</label>
+                <label for="inputName" class="form-label">Nombre(s)</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Escribe tu(s) nombre(s)">
+            </div>
+            <div class="col-6">
+                <label for="inputLastName" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="Escribe tus apellidos">
+            </div>
+            <div class="col-6">
+                <label for="inputDate" class="form-label">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="inputDate">
+            </div>
+            <div class="col-6">
+                <label for="emailInput" class="form-label">Correo Electronico</label>
                 <input type="email" class="form-control" id="emailInput" placeholder="Escribe tu correo">
             </div>
             <div class="col-6">
-                <label for="inputPass" class="form-label">Contrasena:</label>
+                <label for="inputUser" class="form-label">Nombre de Usuario</label>
+                <input type="text" class="form-control" id="inputUser" placeholder="Escribe tu nombre de usuario">
+            </div>
+            <div class="col-6">
+                <label for="inputPass" class="form-label">Contrasena</label>
                 <input type="password" class="form-control" id="inputPass" placeholder="Escribe tu contrasena">
             </div>
+            <div class="col-6">
+                <label for="inputPass2" class="form-label">Confirmar Contrasena</label>
+                <input type="password2" class="form-control" id="inputPass2" placeholder="Confirma tu contrasena">
+            </div>
+            <div class="col-6">
+                <label for="inputImg" class="form-label">Foto de Perfil</label>
+                <input type="image" class="form-control" id="inputImg" placeholder="Sube tu foto de perfil">
+            </div>
             <div class="col-12">
-                <label for="inputName" class="form-label">Nombre(s):</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Escribe tu(s) nombre(s)">
+                <button type="submit" class="btn btn-primary">Registrarme</button>
             </div>
         </form>
     </div>
