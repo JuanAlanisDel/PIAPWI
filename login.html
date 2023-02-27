@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ingresar - Postit</title>
+    <title>Iniciar Sesión - Postit</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
   </head>
@@ -13,7 +13,7 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Postit
+            PostIt
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,7 +21,9 @@
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Registro</a>
+                <a class="nav-link active" aria-current="page" href="#">
+                    <img src="./media/amogus.jpg" alt="ProfilePic" width="24" height="24" class="d-inline-block align-text-top">
+                    Registro/Mi nombre</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Dashboard</a>
@@ -37,9 +39,13 @@
           </div>
         </div>
       </nav>
+      <div class="container" id="titulo">
+        <span class="row g-3 mt-3">
+            <h1><b>Iniciar Sesión</b></h1></div>
+        </span>
+      </div>
     <div class="container">
         <form class="row g-3 mt-3">
-            <div id="titulo"><h1><b>Ingreso de Usuario</b></h1></div>
             <div class="col-12">
                 <label for="inputUser" class="form-label">Nombre de Usuario</label>
                 <input type="text" class="form-control" id="inputUser" placeholder="Escribe tu nombre de usuario">
