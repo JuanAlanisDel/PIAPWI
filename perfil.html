@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Registrar - Postit</title>
+    <title>Mi Perfil - Postit</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
   </head>
@@ -37,45 +37,30 @@
           </div>
         </div>
       </nav>
-    <div class="container">
-        <form class="row g-3 mt-3">
-            <div id="titulo"><h1><b>Registro de Usuario</b></h1></div>
-            <div class="col-6">
-                <label for="inputName" class="form-label">Nombre(s)</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Escribe tu(s) nombre(s)">
+      <div class="container" id="titulo">
+        <span class="row g-3 mt-3">
+            <h1><b>Mi Perfil</b></h1></div>
+        </span>
+      </div>
+    <div class="container" id="IdInfo">
+        <span class="row g-3 mt-3">
+            <div class="col-5">
+                <img id="IdPerfil" src="https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec" alt="">
             </div>
-            <div class="col-6">
-                <label for="inputLastName" class="form-label">Apellidos</label>
-                <input type="text" class="form-control" id="inputLastName" placeholder="Escribe tus apellidos">
+            <div class="col-7">
+                <h1><b>Reflejar mi nombre de usuario</b></h1>
+                <hr>
+                <h4><b>Nombre(s): </b>Reflejar mi(s) nombre(s)</h4>
+                <hr>
+                <h4><b>Apellidos: </b>Reflejar mis apellidos</h4>
+                <hr>
+                <h4><b>E-mail: </b>Reflejar mi dirección de correo electrónico</h4>
+                <hr>
+                <h4><b>Edad: </b>Reflejar mi edad</h4>
+                <hr>
+                <h6>Link de editar datos</h6>
             </div>
-            <div class="col-6">
-                <label for="inputDate" class="form-label">Fecha de Nacimiento</label>
-                <input type="date" class="form-control" id="inputDate">
-            </div>
-            <div class="col-6">
-                <label for="emailInput" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" id="emailInput" placeholder="Escribe tu correo">
-            </div>
-            <div class="col-6">
-                <label for="inputUser" class="form-label">Nombre de Usuario</label>
-                <input type="text" class="form-control" id="inputUser" placeholder="Escribe tu nombre de usuario">
-            </div>
-            <div class="col-6">
-                <label for="inputPass" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="inputPass" placeholder="Escribe tu contraseña">
-            </div>
-            <div class="col-6">
-                <label for="inputPass2" class="form-label">Confirmar Contraseña</label>
-                <input type="password2" class="form-control" id="inputPass2" placeholder="Confirma tu contraseña">
-            </div>
-            <div class="col-6">
-                <label for="inputImg" class="form-label">Foto de Perfil</label>
-                <input type="image" class="form-control" id="inputImg" placeholder="Sube tu foto de perfil">
-            </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Registrarme</button>
-            </div>
-        </form>
+        </span>
         <br>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

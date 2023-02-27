@@ -8,19 +8,25 @@
     padding:20px;
     text-align: center;
 }
-.navbar-brand{
-    background-color:red;
-}
 .container{
     background-color:white;
     margin-top:20px;
     border-left: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 footer{
     text-align:center;
-    padding:20px;
+    padding:40px;
     color:white;
+    background-color:rgb(76, 107, 136);
+}
+#IdInfo{
+    padding:40px;
+}
+#IdPerfil{
+    border-radius:20px;
+    width:400px;
+    height:400px;
 }
 body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
