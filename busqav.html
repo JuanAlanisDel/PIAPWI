@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Crear PostIt - Postit</title>
+    <title>Búsqueda Avanzada - Postit</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
   </head>
@@ -41,21 +41,21 @@
       </nav>
       <div class="container" id="titulo">
         <span class="row g-3 mt-3">
-            <h1><b>Crear PostIt</b></h1></div>
+            <h1><b>Búsqueda Avanzada</b></h1></div>
         </span>
       </div>
     <div class="container">
         <form class="row g-3 mt-3">
-            <div class="col-12">
-                <label for="inputUser" class="form-label">Título de PostIt:</label>
-                <input type="text" class="form-control" id="inputPost" placeholder="Mi historia de hoy">
+            <div class="col-">
+                <label for="inputUser" class="form-label">Filtrar por título:</label>
+                <input type="text" class="form-control" id="inputPost" placeholder="Palabras clave">
             </div>
             <div class="col-12">
-                <label for="inputPass" class="form-label">Descripción:</label>
-                <input type="text" class="form-control" id="inputDesc" placeholder="Hace unas horas...">
+                <label for="inputPass" class="form-label">Filtrar por descripción:</label>
+                <input type="text" class="form-control" id="inputDesc" placeholder="Palabras clave">
             </div>
             <div class="col-6">
-                <label for="inputPass" class="form-label">Categoría:</label>
+                <label for="inputPass" class="form-label">Filtrar por categoría:</label>
                 <br>
                 <label>
                 <input type="checkbox" value="first_cat" id="idCat1"> Chisme&emsp;
@@ -65,12 +65,16 @@
                 <input type="checkbox" value="fifth_cat" id="idCat5"> Terror&emsp;
               <input type="checkbox" value="sixth_cat" id="idCat6"> Otro&emsp;</label>
             </div>
-            <div class="col-6">
-                <label for="inputPass" class="form-label">Multimedia (opcional):</label>
-                <input type="file" class="form-control" id="inputFile">
+            <div class="col-3">
+              <label for="inputDate" class="form-label">Filtrar desde esta fecha:</label>
+              <input type="date" class="form-control" id="inputDate">
+            </div>
+            <div class="col-3">
+              <label for="inputDate" class="form-label">Filtrar hasta esta fecha:</label>
+              <input type="date" class="form-control" id="inputDate">
             </div>
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Publicar</button>
+                <button type="submit" class="btn btn-primary">Buscar</button>
             </div>
         </form>
         <br>
