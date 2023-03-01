@@ -4,91 +4,148 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Registrar - Postit</title>
+    <title>Dashboard - Postit</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg bg-body-tertiary" id="scroll">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            PostIt
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                    <img src="./media/amogus.jpg" alt="ProfilePic" width="24" height="24" class="d-inline-block align-text-top">
-                    Registro/Mi nombre</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Dashboard</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Búsqueda Avanzada</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="buscar">
-              <input class="form-control me-2" type="buscar" placeholder="Buscar publicación" aria-label="Buscar">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./media/logo.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+          PostIt
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                  <img src="./media/profile.jpg" alt="ProfilePic" width="24" height="24" class="d-inline-block align-text-center">
+                  Registro/Mi nombre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Búsqueda Avanzada</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="buscar">
+            <input class="form-control me-2" type="buscar" placeholder="Buscar publicación" aria-label="Buscar">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
         </div>
+      </div>
       </nav>
       <div class="container" id="titulo">
         <span class="row g-3 mt-3">
-            <h1><b>Registrar</b></h1></div>
+            <h1><b>PostIts Recientes</b></h1></div>
         </span>
       </div>
+      <div class="container">
+        <div class="row g-3 mt-3">
+            <div class="col-9">
+                  <a class="nav-link active" aria-current="page" href="#">
+                  <img src="./media/profile.jpg" alt="ProfilePic1" width="60" height="60" class="c-inline-block align-text-center">
+                  &ensp;Pablito</a>
+                  <hr>
+            </div>
+            <div class="col-3">
+              <input type="date" readonly class="form-control-plaintext" id="floatDate1" placeholder="Fecha de ejemplo 1" value="Fecha de ejemplo 1">
+            </div>
+            <div class="col-9 mt-auto">
+              <h2>
+              <input type="text" readonly class="form-control-plaintext" id="floatTitle1" placeholder="Clavé un clavito" value="Clavé un clavito">
+            </h2>
+              <hr>
+              <input type="text" readonly class="form-control-plaintext" id="floatDesc1" placeholder="El otro día vi a un calvito" value="El otro día vi a un calvito">
+              <hr>
+              <input type="text" readonly class="form-control-plaintext" id="floatCat1" placeholder="Gracioso" value="Gracioso">
+              <hr>
+            </div>
+            <div class="col-3 mb-3">
+                <input type="text" readonly class="form-control-plaintext" id="floatMedia" placeholder="Imagen de ejemplo 1" value="Imagen de ejemplo 1">
+                <img for="floatMedia" src="./media/media.jpg" alt="Foto de publicación 1" height="84" width="150">
+            </div>
+        </div>
+    </div>
     <div class="container">
-        <form class="row g-3 mt-3">
-            <div class="col-6">
-                <label for="inputName" class="form-label">Nombre(s)</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Escribe tu(s) nombre(s)">
+        <div class="row g-3 mt-3">
+            <div class="col-9">
+                  <a class="nav-link active" aria-current="page" href="#">
+                  <img src="./media/profile.jpg" alt="ProfilePic2" width="60" height="60" class="c-inline-block align-text-center">
+                  &ensp;Patricia</a>
+                  <hr>
             </div>
-            <div class="col-6">
-                <label for="inputLastName" class="form-label">Apellidos</label>
-                <input type="text" class="form-control" id="inputLastName" placeholder="Escribe tus apellidos">
+            <div class="col-3">
+              <input type="date" readonly class="form-control-plaintext" id="floatDate2" placeholder="Fecha de ejemplo 2" value="Fecha de ejemplo 2">
             </div>
-            <div class="col-6">
-                <label for="inputDate" class="form-label">Fecha de Nacimiento</label>
-                <input type="date" class="form-control" id="inputDate">
+            <div class="col-9 mt-auto">
+              <h2>
+              <input type="text" readonly class="form-control-plaintext" id="floatTitle2" placeholder="La tragedia" value="La tragedia">
+            </h2>
+              <hr>
+              <input type="text" readonly class="form-control-plaintext" id="floatDesc2" placeholder="No compren un cono de helado" value="No compren un cono de helado">
+              <hr>
+              <input type="text" readonly class="form-control-plaintext" id="floatCat2" placeholder="Consejo" value="Consejo">
+              <hr>
             </div>
-            <div class="col-6">
-                <label for="emailInput" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" id="emailInput" placeholder="Escribe tu correo">
+            <div class="col-3 mb-3">
+                <input type="text" readonly class="form-control-plaintext" id="floatMedia2" placeholder="Imagen de ejemplo 2" value="Imagen de ejemplo 2">
+                <img for="floatMedia2" src="./media/media1.jpg" alt="Foto de publicación 2" height="100" width="150">
             </div>
-            <div class="col-6">
-                <label for="inputUser" class="form-label">Nombre de Usuario</label>
-                <input type="text" class="form-control" id="inputUser" placeholder="Escribe tu nombre de usuario">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-3 mt-3">
+            <div class="col-9">
+                  <a class="nav-link active" aria-current="page" href="#">
+                  <img src="./media/profile.jpg" alt="ProfilePic3" width="60" height="60" class="c-inline-block align-text-center">
+                  &ensp;Nombre de ejemplo 3</a>
+                  <hr>
             </div>
-            <div class="col-6">
-                <label for="inputPass" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="inputPass" placeholder="Escribe tu contraseña">
+            <div class="col-3">
+              <input type="date" readonly class="form-control-plaintext" id="floatDate3" placeholder="Fecha de ejemplo 3" value="Fecha de ejemplo 3">
             </div>
-            <div class="col-6">
-                <label for="inputPass2" class="form-label">Confirmar Contraseña</label>
-                <input type="password2" class="form-control" id="inputPass2" placeholder="Confirma tu contraseña">
+            <div class="col-9 mt-auto">
+              <h2>
+              <input type="text" readonly class="form-control-plaintext" id="floatTitle3" placeholder="Titulo de ejemplo 3" value="Titulo de ejemplo 3">
+            </h2>
+              <hr>
+              <input type="text" readonly class="form-control-plaintext" id="floatDesc3" placeholder="Descripción de ejemplo 3" value="Descripción de ejemplo 3">
+              <hr>
+              <input type="text" readonly class="form-control-plaintext" id="floatCat3" placeholder="Categoría de ejemplo 3" value="Categoría de ejemplo 3">
+              <hr>
             </div>
-            <div class="col-6">
-                <label for="inputImg" class="form-label">Foto de Perfil</label>
-                <input type="file" class="form-control" id="inputFile">
+            <div class="col-3 mb-3">
+                <input type="text" readonly class="form-control-plaintext" id="floatMedia3" placeholder="Imagen de ejemplo 3" value="Imagen de ejemplo 3">
+                <img for="floatMedia3" src="./media/amogus.jpg" alt="Foto de publicación 3" height="150" width="150">
             </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Registrar</button>
-            </div>
-        </form>
-        <br>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-3 mt-3">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="./css/bootstrap.min.js"></script>
   </body>
   <footer class="mt-auto" id="footer">
-
     <b>Autores</b>
     <br>
     <b>Juan Gerardo Alanís Delgado</b>

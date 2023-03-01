@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Búsqueda Avanzada - Postit</title>
+    <title>Registrar - Postit</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
   </head>
@@ -41,40 +41,45 @@
       </nav>
       <div class="container" id="titulo">
         <span class="row g-3 mt-3">
-            <h1><b>Búsqueda Avanzada</b></h1></div>
+            <h1><b>Registrar</b></h1></div>
         </span>
       </div>
     <div class="container">
         <form class="row g-3 mt-3">
-            <div class="col-">
-                <label for="filterTitle" class="form-label">Filtrar por título:</label>
-                <input type="text" class="form-control" id="filterTitle" placeholder="Palabras clave">
-            </div>
-            <div class="col-12">
-                <label for="filterDesc" class="form-label">Filtrar por descripción:</label>
-                <input type="text" class="form-control" id="filterDesc" placeholder="Palabras clave">
+            <div class="col-6">
+                <label for="inputName" class="form-label">Nombre(s)</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Escribe tu(s) nombre(s)">
             </div>
             <div class="col-6">
-                <label for="idCat" class="form-label">Filtrar por categoría:</label>
-                <br>
-                <label>
-                <input type="checkbox" value="first_cat" id="idCat"> Chisme&emsp;
-                <input type="checkbox" value="second_cat" id="idCat"> Gracioso&emsp;
-                <input type="checkbox" value="third_cat" id="idCat"> Consejo&emsp;
-                <input type="checkbox" value="fourth_cat" id="idCat"> Cocina&emsp;
-                <input type="checkbox" value="fifth_cat" id="idCat"> Terror&emsp;
-              <input type="checkbox" value="sixth_cat" id="idCat"> Otro&emsp;</label>
+                <label for="inputLastName" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="Escribe tus apellidos">
             </div>
-            <div class="col-3">
-              <label for="inputDate1" class="form-label">Filtrar desde esta fecha:</label>
-              <input type="date" class="form-control" id="inputDate1">
+            <div class="col-6">
+                <label for="inputDate" class="form-label">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="inputDate">
             </div>
-            <div class="col-3">
-              <label for="inputDate1" class="form-label">Filtrar hasta esta fecha:</label>
-              <input type="date" class="form-control" id="inputDate2">
+            <div class="col-6">
+                <label for="emailInput" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="Escribe tu correo">
+            </div>
+            <div class="col-6">
+                <label for="inputUser" class="form-label">Nombre de Usuario</label>
+                <input type="text" class="form-control" id="inputUser" placeholder="Escribe tu nombre de usuario">
+            </div>
+            <div class="col-6">
+                <label for="inputPass" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPass" placeholder="Escribe tu contraseña">
+            </div>
+            <div class="col-6">
+                <label for="inputPass2" class="form-label">Confirmar Contraseña</label>
+                <input type="password2" class="form-control" id="inputPass2" placeholder="Confirma tu contraseña">
+            </div>
+            <div class="col-6">
+                <label for="inputImg" class="form-label">Foto de Perfil</label>
+                <input type="file" class="form-control" id="inputFile">
             </div>
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Buscar</button>
+                <button type="submit" class="btn btn-primary">Registrar</button>
             </div>
         </form>
         <br>
@@ -83,6 +88,7 @@
     <script src="./css/bootstrap.min.js"></script>
   </body>
   <footer class="mt-auto" id="footer">
+
     <b>Autores</b>
     <br>
     <b>Juan Gerardo Alanís Delgado</b>
